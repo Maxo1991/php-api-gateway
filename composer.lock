@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a5346524003c21a00c3661bcdc8fb1ed",
+    "packages": [
+        {
+            "name": "maxo1991/php-api-client",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../php-api-client",
+                "reference": "7f6f654a725dc59c3871a5b7c7bfe5934f3e40f9"
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "PaymentAPI\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "PaymentAPI\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "description": "Reusable PHP API client for rate conversion.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

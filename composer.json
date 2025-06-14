@@ -1,0 +1,25 @@
+{
+  "name": "maxo1991/php-api-gateway",
+  "description": "WooCommerce PHP API payment gateway plugin",
+  "type": "wordpress-plugin",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0",
+    "maxo1991/php-api-client": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PaymentAPIGateway\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../php-api-client",
+      "options": {
+        "symlink": true
+      }
+    }
+  ]
+}
