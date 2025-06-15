@@ -81,6 +81,6 @@ class WC_Gateway_Php_Api extends WC_Payment_Gateway
             echo '<p style="color:red;">' . esc_html($e->getMessage()) . '</p>';
         }
 
-        echo '<p><strong>Click Confirm Payment to continue.</strong></p>';
+        echo '<p><strong>Click Place Order to continue.</strong></p>';
     }
 }
